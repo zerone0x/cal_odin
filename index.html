@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1>Calculator</h1>
+</head>
+
+<div class="calculator">
+    <form name="form">
+        <input type="text" name="textview" id="res" value="">
+        <br>
+        <input type="text" name="textview" id="textview" value="">
+        
+    </form>
+    <table>
+        <tr>
+            <td><button id="CE" onclick="del()">DEL</button></td>
+            <td><button id="C" onclick="clearNum()">C</button></td>
+            <td><button id="back" onclick="backspace()">Back</button></td>
+            <td><button id="/" onclick="insert('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="7" onclick="insert(7)">7</button></td>
+            <td><button id="8" onclick="insert(8)">8</button></td>
+            <td><button id="9" onclick="insert(9)">9</button></td>
+            <td><button id="+" onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="4" onclick="insert(4)">4</button></td>
+            <td><button id="5" onclick="insert(5)">5</button></td>
+            <td><button id="6" onclick="insert(6)">6</button></td>
+            <td><button id="-" onclick="insert('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="1" onclick="insert(1)">1</button></td>
+            <td><button id="2" onclick="insert(2)">2</button></td>
+            <td><button id="3" onclick="insert(3)">3</button></td>
+            <td><button id="*" onclick="insert('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="." onclick="insert('.')">.</button></td>
+            <td><button id="0" onclick="insert(0)">0</button></td>
+            <td><button id="=" onclick="insert('=')">=</button></td>
+            <td><button id="/" onclick="insert('/')">/</button></td>
+        </tr>
+    </table>
+<body>
+
+</body>
+<script src="script.js"></script>
+</html>
